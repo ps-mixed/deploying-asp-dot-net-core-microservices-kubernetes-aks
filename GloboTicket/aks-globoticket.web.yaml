@@ -24,7 +24,7 @@ kind: Deployment
 metadata:
   name: dep-globoticket-web
 spec:
-  replicas: 10
+  replicas: 3
   minReadySeconds: 5
   strategy:
     type: RollingUpdate
