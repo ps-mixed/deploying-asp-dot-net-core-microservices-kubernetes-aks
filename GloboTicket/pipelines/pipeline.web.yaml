@@ -18,7 +18,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '86a9c183-a3b0-48e6-931a-4358122f8d06'
   imageRepository: 'globoticket.web'
-  containerRegistry: 'globoticketacr.azurecr.io'
+  containerRegistry: 'zekigloboticketacr.azurecr.io'
   dockerfilePath: 'GloboTicket/GloboTicket.Client/Dockerfile'
   tag: '$(Build.BuildId)'
   deploymentFile: 'aks-globoticket.web.yaml'
@@ -104,5 +104,5 @@ stages:
         configuration: '$(Build.SourcesDirectory)/GloboTicket/$(deploymentFile)'
         secretType: 'dockerRegistry'
         containerRegistryType: 'Azure Container Registry'
-        azureSubscriptionEndpointForSecrets: 'MVPSponsorship (e57087a4-a053-48c9-8857-995316398cdc)'
-        azureContainerRegistry: 'globoticket.azurecr.io'
+        azureSubscriptionEndpointForSecrets: 'Visual Studio Enterprise (ed68e05c-c530-49f0-b8a9-30b1f34b0563)'
+        azureContainerRegistry: 'zekigloboticket.azurecr.io'

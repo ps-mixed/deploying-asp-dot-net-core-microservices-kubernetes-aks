@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
       - name: globoticket-web
-        image: globoticketacr.azurecr.io/globoticket.web:#{Build.BuildId}#
+        image: zekigloboticketacr.azurecr.io/globoticket.web:#{Build.BuildId}#
         env:
         - name: ASPNETCORE_ENVIRONMENT
           value: Production
