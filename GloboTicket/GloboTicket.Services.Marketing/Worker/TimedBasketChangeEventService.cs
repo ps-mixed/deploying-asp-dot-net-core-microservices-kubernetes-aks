@@ -35,11 +35,12 @@ namespace GloboTicket.Services.Marketing.Worker
 
         private async void DoWork(object state)
         {
-            var events = await basketChangeEventService.GetBasketChangeEvents(lastRun, 10);
-            foreach (var basketChangeEvent in events)
-            {
-                await basketChangeEventRepository.AddBasketChangeEvent(mapper.Map<BasketChangeEvent>(basketChangeEvent));
-            }
+            // TODO: ZK commented because of error.
+            //var events = await basketChangeEventService.GetBasketChangeEvents(lastRun, 10);
+            //foreach (var basketChangeEvent in events)
+            //{
+            //    await basketChangeEventRepository.AddBasketChangeEvent(mapper.Map<BasketChangeEvent>(basketChangeEvent));
+            //}
             lastRun = DateTime.Now;
         }
 
