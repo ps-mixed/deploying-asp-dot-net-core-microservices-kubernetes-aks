@@ -21,9 +21,9 @@ namespace GloboTicket.Web.Controllers
         public async Task<IActionResult> Index()
         {
             // we return 200 ok, when we can access the DB categories and events
-            var getCategories = eventCatalogService.GetCategories();
-            var getEvents = eventCatalogService.GetAll();
-            await Task.WhenAll(new Task[] { getCategories, getEvents });
+            //var getCategories = eventCatalogService.GetCategories();
+            //var getEvents = eventCatalogService.GetAll();
+            //await Task.WhenAll(new Task[] { getCategories, getEvents });
 
             return Ok();
         }
